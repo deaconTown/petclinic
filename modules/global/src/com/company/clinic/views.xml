@@ -10,7 +10,11 @@
     </view>
     <view entity="clinic_Visit" name="visit-browse" extends="_local">
         <property name="pet" view="_minimal"/>
-        <property name="veterinarian" view="_minimal"/>
+        <property name="veterinarian" view="_minimal">
+            <property name="user" view="_minimal">
+                <property name="email"/>
+            </property>
+        </property>
     </view>
     <view entity="clinic_Visit" name="visit-edit" extends="_local">
         <property name="pet" view="_minimal"/>
