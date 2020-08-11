@@ -79,6 +79,7 @@ create table CLINIC_VISIT (
     DELETED_BY varchar(50),
     --
     PET_ID varchar(36) not null,
+    NUMBER_ bigint,
     VETERINARIAN_ID varchar(36) not null,
     DATE_ timestamp not null,
     DESCRIPTION longvarchar,
